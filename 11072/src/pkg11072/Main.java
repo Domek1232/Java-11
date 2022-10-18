@@ -80,9 +80,6 @@ public class Main {
         System.out.println(szoveg.substring(3));
         System.out.println(szoveg.substring(3,6));
         
-        
-        
-        
     }
     
 }
