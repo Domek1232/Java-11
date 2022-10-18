@@ -108,17 +108,27 @@ public class Main {
         System.out.println("-----3. FELADAT -----");
         
         //3.Kérjük be az osztály azonosítóját a classId változóba. pl. 2022ea vagy 2018ce stb.
-        
+        String classId;
         System.out.println("Addja meg a(z) osztály azonosítóját: ");
-        
-        
-        System.out.println("-----4. FELADAT -----");
-        //4.Ha a betűjele 'e'-vel kezdődik, alakítsuk 'E'-re.
+        classId = bill.nextLine();
+        if (classId.charAt(4) == 'e')
+            classId = classId.replaceFirst("e", "E");
+        System.out.println(classId);
+       
         System.out.println("-----5. FELADAT -----");
+        
         //5.Ha au évfolyam száma 2022, akkor az osztályazonosító minden betűje legyen nagy.
+        
+        int evfolyam = Integer.parseInt(classId.substring(0,4));
+        if (evfolyam < 2022) classId = classId.toUpperCase();
+        System.out.println(classId);
+        
         System.out.println("-----6. FELADAT -----");
+        
         //6.Ha az osztály mindkét betűjele nagybetűs, írjuk ki,hogy estis osztály.
         
+        if (classId.equals(classId.toUpperCase()))
+            System.out.println("Estis osztály");
         
     }
     
