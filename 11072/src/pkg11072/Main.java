@@ -5,6 +5,8 @@
  */
 package pkg11072;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user3
@@ -79,6 +81,44 @@ public class Main {
         //stringből substring kivétele
         System.out.println(szoveg.substring(3));
         System.out.println(szoveg.substring(3,6));
+        
+        //FELADATOK
+        
+        System.out.println("-----1. FELADAT -----");
+        
+        //1.Kérjünk be egy diák teljes nevét a fullName változóba!
+        
+        String fullName, firstName, lastName;
+        int szokozhely;
+        Scanner bill = new Scanner(System.in);
+        System.out.println("Add meg a teljes neved: ");
+        fullName = bill.nextLine();
+      
+       
+        System.out.println("-----2. FELADAT -----");
+        
+        //2.Szedjük szét a nevet firstName és lastName változókba!
+        
+        firstName = fullName.split(" ") [1];
+        lastName = fullName.split(" ") [0];
+        
+        System.out.println(firstName);
+        System.out.println(lastName);
+        
+        System.out.println("-----3. FELADAT -----");
+        
+        //3.Kérjük be az osztály azonosítóját a classId változóba. pl. 2022ea vagy 2018ce stb.
+        
+        System.out.println("Addja meg a(z) osztály azonosítóját: ");
+        
+        
+        System.out.println("-----4. FELADAT -----");
+        //4.Ha a betűjele 'e'-vel kezdődik, alakítsuk 'E'-re.
+        System.out.println("-----5. FELADAT -----");
+        //5.Ha au évfolyam száma 2022, akkor az osztályazonosító minden betűje legyen nagy.
+        System.out.println("-----6. FELADAT -----");
+        //6.Ha az osztály mindkét betűjele nagybetűs, írjuk ki,hogy estis osztály.
+        
         
     }
     
