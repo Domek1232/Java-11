@@ -57,6 +57,29 @@ public class Main {
         //keresett karakter(ek) utolsó poziciója
         System.out.println(szoveg.lastIndexOf("t"));
         
+        //string üres-e (boolean)
+        System.out.println(szoveg.isEmpty());
+        String szoveg2 = "";
+        System.out.println(szoveg2.isEmpty());
+        
+        //lecseréli a szövegben az összes! megadott karakter(ek)et más karakter(ek)re
+        System.out.println(szoveg.replace("tetszőleges", "akármilyen"));
+        System.out.println(szoveg.replace("e", "b"));
+        
+        //lecseréli a szövegben az első! megadott karakter(ek)et más karakter(ek)re
+        System.out.println(szoveg.replaceFirst("e", "b"));
+        
+        //string szétszedése tömbbe megadott karakterek mentén
+        System.out.println(szoveg.split(" "));
+        
+        //nem string típusú adat stringgé alakítása
+        //Integer szam = 512;
+        //System.out.println(szam.toString());
+        
+        //stringből substring kivétele
+        System.out.println(szoveg.substring(3));
+        System.out.println(szoveg.substring(3,6));
+        
         
     }
     
