@@ -15,12 +15,12 @@ public class Dogajavito1025 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String szoveg = "Sok lúd dosznót győz";
+        String szoveg = "Sok lúd disznót győz";
         String masikszoveg = "Sok kacsa malacot nyer";
         //1.FELADAT
         System.out.println(szoveg.length());
         //2.FELADAT
-        System.out.println(szoveg.indexOf(0));
+        System.out.println(szoveg.charAt(0));
         //3.FELADAT
         System.out.println(szoveg.compareTo(masikszoveg));
         //4.FELADAT
