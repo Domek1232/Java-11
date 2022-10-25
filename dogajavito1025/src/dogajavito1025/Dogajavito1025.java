@@ -30,7 +30,9 @@ public class Dogajavito1025 {
         //6.FELADAT
         System.out.println(szoveg.replace("lúd", "veréb"));
         //7.FELADAT
-        System.out.println();
+        int szokoz = szoveg.indexOf(" ");
+            String szovegSzokoz = szoveg.substring(szokoz);
+        System.out.println(szovegSzokoz);
         
     }
     
