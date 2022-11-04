@@ -46,6 +46,11 @@ public class Metodusok {
         int b = bill.nextInt();
         
         //A kisebbik legyen egy tartomány alsó határa, a nagyobika felső.
+        if (a < b){
+            System.out.println(veletlen(a,b));
+        } else if (b < a) {
+            System.out.println(veletlen());
+        }
         
         // a) Generáltassunk a tartományból egy random számot.
         // b) Hozzunk lérte a függvény segítségével egy 20 elemű tömböt.
