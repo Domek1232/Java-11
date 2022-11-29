@@ -44,21 +44,22 @@ public class Methodgyak2 {
     
     
     //3. ami egy n számot kap paraméterként, és kiír egy n x n-es mátrixot véletlen 0 ill. 1 számjegyekből
-    public static void matrixszam(int m){
+    public static void matrix(int n) {
         Random rand = new Random();
-        String matrix = "";
-        int a,i;
+        String matrixCode = "";
+        int a, i;
         
-        for(i = 0; i < m; i++){
-            for(a= 0; a < 5; a++){
-                if(rand.nextInt(2) == 1){
-                    matrix= matrix + "0 ";
-                }else {
-                    matrix= matrix + "1 ";
+        for (i = 0; i < n; i++) {
+            for (a = 0; a < 5; a++) {
+                if (rand.nextInt(2) == 1) {
+                    matrixCode = matrixCode + "0    ";
+                } else {
+                    matrixCode = matrixCode + "1    ";
                 }
-                System.out.println(matrix);
-                    matrix="";
             }
+            System.out.println(matrixCode);
+            matrixCode = "";
+
         }
     }
     
