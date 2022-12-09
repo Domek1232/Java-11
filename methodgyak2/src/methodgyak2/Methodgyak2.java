@@ -44,22 +44,12 @@ public class Methodgyak2 {
     
     
     //3. ami egy n számot kap paraméterként, és kiír egy n x n-es mátrixot véletlen 0 ill. 1 számjegyekből
-    public static void matrix(int n) {
+    public static void matrix(int n){
         Random rand = new Random();
-        String matrixCode = "";
-        int a, i;
-        
-        for (i = 0; i < n; i++) {
-            for (a = 0; a < 5; a++) {
-                if (rand.nextInt(2) == 1) {
-                    matrixCode = matrixCode + "0    ";
-                } else {
-                    matrixCode = matrixCode + "1    ";
-                }
+        for (int i = 0; i < n; i++);{
+            for (int j=0; j<n; j++) {
+                System.out.println((rand.nextInt(2)+0));
             }
-            System.out.println(matrixCode);
-            matrixCode = "";
-
         }
     }
     
@@ -72,7 +62,7 @@ public class Methodgyak2 {
         int c = 8;
         System.out.println(eldonti(a,b,c));
         
-        
+       
     }
     
 }
